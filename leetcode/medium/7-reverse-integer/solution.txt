@@ -1,19 +1,24 @@
 class Solution {
 public:
     int reverse(int x) {
-        if (x == INT_MIN) return 0; 
+        if (x == INT_MIN)
+            return 0;
 
         bool isNegative = (x < 0);
         string s = to_string(abs(x));
 
         std::reverse(s.begin(), s.end());
 
-        try {
-            int ans = stoi(s);
-            return isNegative ? -ans : ans;
-        } 
-        catch (const out_of_range& e) {
+        long long ans = stoll(s);
+
+        if (isNegative) {
+            ans = -ans;
+        }
+
+        if (ans < INT_MIN || ans > INT_MAX) {
             return 0;
         }
+
+        return ans;
     }
 };
