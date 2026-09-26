@@ -1,0 +1,23 @@
+{
+  "title": "Count Integers With Even Digit Sum",
+  "titleSlug": "count-integers-with-even-digit-sum",
+  "frontendQuestionId": "2180",
+  "leetcodeUrl": "https://leetcode.com/problems/count-integers-with-even-digit-sum/",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Simulation"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-09-26T09:53:29.895Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-09-26T09:53:30.279Z"
+}
