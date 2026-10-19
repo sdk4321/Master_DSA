@@ -1,0 +1,24 @@
+class Solution {
+public:
+    vector<int> lastVisitedCell(vector<vector<char>>& grid) {
+
+        int m = grid.size();
+        int n = grid[0].size();
+
+        vector<vector<bool>> res(m, vector<bool>(n, false));
+
+        int a = 0;
+        int b = 0;
+          
+        res[0][0] = true;
+
+        while (true) {
+
+            int na = a;
+            int nb = b;
+
+            if (grid[a][b] == 'L') {
+                nb--;
+            } else if (grid[a][b] == 'R') {
+                nb++;
+            } else if (grid[a][
