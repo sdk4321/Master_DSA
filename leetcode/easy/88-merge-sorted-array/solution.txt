@@ -1,0 +1,16 @@
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        vector<int> num11(nums1.begin(), nums1.begin() + m);
+        vector<int> num21(nums2.begin(), nums2.begin() + n);
+
+        vector<int> final_num = num11;
+        final_num.insert(final_num.end(), num21.begin(), num21.end());
+
+        sort(final_num.begin(), final_num.end());
+
+        for (int i = 0; i < final_num.size(); i++) {
+            nums1[i] = final_num[i];
+        }
+    }
+};
